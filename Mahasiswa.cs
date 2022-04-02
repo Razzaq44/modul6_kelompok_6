@@ -10,6 +10,7 @@ namespace mod6
 		public int age { get; set; }
 		public Address address { get; set; }
 		public List<Matkul> courses { get; set; }
+		public List<Team> members { get; set; }
 		public Mahasiswa() { }
 
 	}
@@ -28,4 +29,14 @@ namespace mod6
 		public string name { get; set; }
 		public Matkul() { }
 	}
+
+	public class Team
+    {
+		public string firstName { get; set; }
+		public string lastName { get; set; }
+		public string gender { get; set; }
+		public int age { get; set; }
+		public string nim { get; set; }
+
+    }
 }
