@@ -1,2 +1,10 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿using System;
+
+public class program
+{
+    public static void Main(string[] args)
+    {
+        Mahasiswa objHasilBaca = DataMahasiswa.ReadJSON();
+        Console.WriteLine("nim " + objHasilBaca.nim);
+    }
+}
