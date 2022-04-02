@@ -1,0 +1,39 @@
+{
+  "members": [
+    {
+      "firstName": "Rifki",
+      "lastName": "Fauzi",
+      "gender": "male",
+      "age": 20,
+      "nim": "1302200039"
+    },
+    {
+      "firstName": "Razzaq",
+      "lastName": "Adi Wibowo",
+      "gender": "male",
+      "age": 20,
+      "nim": "1302200038"
+    },
+    {
+      "firstName": "Gita",
+      "lastName": "Rahmi Fajrin",
+      "gender": "female",
+      "age": 20,
+      "nim": "1302200037"
+    }
+    {
+      "firstName": "Irkhamna",
+      "lastName": "Rahma dewi",
+      "gender": "female",
+      "age": 20,
+      "nim": "1302200036"
+    }
+    {
+      "firstName": "Carlos",
+      "lastName": "Rivero",
+      "gender": "male",
+      "age": 20,
+      "nim": "1302200035"
+    }
+  ]
+}

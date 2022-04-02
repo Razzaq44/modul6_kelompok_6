@@ -1,0 +1,21 @@
+{
+  "firstName": "Rifki",
+  "lastName": "Fauzi",
+  "gender": "male",
+  "age": 20,
+  "address": {
+    "streetAddress": "Jampang",
+    "city": "Bekasi",
+    "state": "West Java"
+  },
+  "courses": [
+    {
+      "code": "CRI2C4",
+      "name": "Konstruksi Perangkat Lunak"
+    },
+    {
+      "code": "CRI2C5",
+      "name": "Basis Data"
+    }
+  ]
+}
