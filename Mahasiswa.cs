@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace mod6
 {
@@ -11,6 +12,7 @@ namespace mod6
 		public Address address { get; set; }
 		public List<Matkul> courses { get; set; }
 		public List<Team> members { get; set; }
+		public Glossary glossary { get; set; }
 		public Mahasiswa() { }
 
 	}
@@ -37,6 +39,39 @@ namespace mod6
 		public string gender { get; set; }
 		public int age { get; set; }
 		public string nim { get; set; }
-
     }
+
+	public class Glossary
+    {
+		public string title { get; set; }
+		public GlossDivision GlossDiv { get; set; }
+	}
+
+	public class GlossDivision
+    {
+		public string title { get; set; }
+		public DaftarGloss GlossList { get; set; }
+	}
+
+	public class DaftarGloss
+    {
+		public InputGloss GlossEntry { get; set; }
+	}
+
+	public class InputGloss
+    {
+		public string ID { get; set; }
+		public string SortAs { get; set; }
+		public string GlossTerm { get; set; }
+		public string Acronym { get; set; }
+		public string Abbrev { get; set; }
+		public GlossDefi GlossDef { get; set; }
+		public string GlossSee { get; set; }
+	}
+
+	public class GlossDefi
+    {
+		public string para { get; set; }
+		public List<string> GlossSeeAlso { get; set; }
+	}
 }

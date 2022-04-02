@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace mod6
 {
@@ -8,6 +9,7 @@ namespace mod6
         {
             Mahasiswa objHasilBaca = DataMahasiswa.ReadJSON();  
             Mahasiswa objHasilBaca2 = TeamMembers.ReadJSON();
+            Mahasiswa objHasilBaca3 = GlossaryItem.ReadJSON();
 
             Console.WriteLine("----------------------------------------------------------------------------------------------------------------");
             Console.WriteLine();
@@ -34,9 +36,23 @@ namespace mod6
             }
 
             Console.WriteLine();
+            Console.WriteLine("------------------------------------------------- GlossEntry ---------------------------------------------------");
+            Console.WriteLine();
+
+            Console.WriteLine("ID           : " + objHasilBaca3.glossary.GlossDiv.GlossList.GlossEntry.ID);
+            Console.WriteLine("SortAs       : " + objHasilBaca3.glossary.GlossDiv.GlossList.GlossEntry.SortAs);
+            Console.WriteLine("GlossTerm    : " + objHasilBaca3.glossary.GlossDiv.GlossList.GlossEntry.GlossTerm);
+            Console.WriteLine("Acronym      : " + objHasilBaca3.glossary.GlossDiv.GlossList.GlossEntry.Acronym);
+            Console.WriteLine("Abbrev       : " + objHasilBaca3.glossary.GlossDiv.GlossList.GlossEntry.Abbrev);
+            Console.WriteLine("GlossDef     : ");
+            Console.WriteLine("     para                    : " + objHasilBaca3.glossary.GlossDiv.GlossList.GlossEntry.GlossDef.para);
+            List<string> glossSee = objHasilBaca3.glossary.GlossDiv.GlossList.GlossEntry.GlossDef.GlossSeeAlso;
+            Console.WriteLine("     GlossSeeAlso            : " + String.Join(", ", glossSee));      
+            Console.WriteLine("GlossSee     : " + objHasilBaca3.glossary.GlossDiv.GlossList.GlossEntry.GlossSee);
+
+            Console.WriteLine();
             Console.WriteLine("----------------------------------------------------------------------------------------------------------------");
             Console.WriteLine();
         }
     }
 }
-
